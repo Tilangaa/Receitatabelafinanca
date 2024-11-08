@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --cabeçalho: #edfdf2;
+    --subtitulo: #4b4b4b;
+    --cinza: #fefdf9;
+    --branco: white;
+    --preto: black;
+    --rodape:  #129e3f;
+    --rodape2: #206536;
+}
+
+
+/* cabeçalho */
+.logo {
+    width: 180px;
+    padding: 10px;
+}
+
+header {
+    background-color: var(--cabeçalho);
+    display: flex;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home {
+    color: var(--subtitulo);
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+/* rodapé */
+.secaoII {
+    background-color: var(--rodape);
+    display: flex;
+    justify-content: space-between;
+}
+
+.siga {
+    justify-self: flex-end;
+    padding-right: 30px;
+}
+
+.sig {
+    font-size: xx-large;
+    text-align: end;
+    color: var(--branco);
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+.ti {
+    color: var(--branco);
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: xx-large;
+}
+
+.face {
+    width: 35px;
+}
+
+.whatsapp {
+    width: 60px;
+}
+
+.linkedin {
+    width: 60px;
+}
+
+.insta {
+    width: 60px;
+}
+
+.you {
+    width: 70px;
+}
+
+.img3 {
+    width: 200px;
+    padding-top: 10px;
+}
+
+footer{
+    background-color: var(--rodape);
+}
+
+.p3 {
+    background-color: var(--rodape2);
+    text-align: center;
+    color: var(--branco);
+    font-size: larger;
+    padding: 30px;
+}
+
+
+.container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+.tituloooo {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+
+.cartas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.cartao {
+    font-weight: bold;
+    padding-bottom: 60px;
+    width: 150px;
+    height: 100px;
+    background-color: #B6F2C6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1em;
+}
+
+
+.cartao:last-child::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #24B753;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.avalia{
+    margin-right: 35px;
+}
+
+.avalia:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+ 
+  .avalia:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 45px;
+    color: #666;
+  }
+ 
+  .avalia:not(:checked) > label:before {
+    content: '★';
+  }
+ 
+  .avalia > input:checked + label:hover,
+  .avalia > input:checked + label:hover ~ label,
+  .avalia > input:checked ~ label:hover,
+  .avalia > input:checked ~ label:hover ~ label,
+  .avalia > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+ 
+  .avalia:not(:checked) > label:hover,
+  .avalia:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+ 
+  .avalia > input:checked ~ label {
+    color: #ffa723;
+  }
